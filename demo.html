@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Demo Selector</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="listSelector.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#select').listSelector({'data':{'puru':{'name':'Purusho', 'selected':'true'}, 'super':{'name':'Superman', 'selected':'true'}}});
+		});
+	</script>
+	<style type="text/css">
+		ul {
+			list-style-type:none;
+		}
+		li {
+			float:left;
+		}
+		div {
+			position:fixed;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="select" value="load">
+</body>
+</html>
